@@ -1,43 +1,59 @@
+:root {
+  --bg-color: #232126;
+  --sidebar-bg: #3C3A44;
+  --text-color: #E9EDE8;
+  --link-color: #bdbdee;
+  --border-color: #4C5764;
+  --border-button-color: #808080;
+  --accent-blue: #0096fa;
+  --font-main: "Inter", sans-serif;
+}
+
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
-  background-color: #1e1d23;
-  color: #ddd;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
-/* Layout */
-.layout {
-  display: flex;
-  align-items: flex-start;
-}
-
-/* Sidebar */
-.sidebar {
-  width: 240px;
-  background-color: #2a292f;
-  padding: 20px;
-  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.3);
-  min-height: 100vh; /* makes sidebar full height */
-}
-
-.sidebar-header {
+/* ===== HEADER ===== */
+.site-header {
   display: flex;
   align-items: center;
-  margin-bottom: 24px;
+  background-color: var(--bg-color);
+  padding: 10px 20px;
 }
 
-.sidebar-logo {
-  width: 42px;
-  height: 42px;
-  border-radius: 6px;
-  margin-right: 10px;
+.site-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  margin-right: 12px;
 }
 
-.sidebar-title {
-  font-size: 1.3rem;
+.site-title {
+  font-size: 1.5rem;
   font-weight: 700;
   color: #fff;
   margin: 0;
+}
+
+/* ===== LAYOUT ===== */
+.layout {
+  display: flex;
+  padding: 20px;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  width: 220px;
+  background-color: var(--sidebar-bg);
+  padding: 16px;
+  border: 1px solid var(--border-color);
+  border-radius: 2px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  margin-right: 24px;
+  height: auto; /* grows only to content */
 }
 
 .sidebar-nav {
@@ -48,10 +64,10 @@ body {
 .sidebar-nav a {
   display: block;
   padding: 8px 12px;
-  color: #bdbdee;
+  color: var(--text-color);
   text-decoration: none;
-  border: 1px solid #3b3943;
-  border-radius: 6px;
+  border: 1px solid var(--border-button-color);
+  border-radius: 4px;
   margin-bottom: 8px;
   transition: background 0.2s;
 }
@@ -60,9 +76,9 @@ body {
   background-color: #3b3943;
 }
 
-/* External buttons */
+/* ===== EXTERNAL LINKS ===== */
 .sidebar-links {
-  margin-top: 16px;
+  margin-top: 12px;
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -78,13 +94,8 @@ body {
   font-weight: 600;
 }
 
-.mastodon { background: #6364ff; }
-.pixiv { background: #0096fa; }
-.peertube { background: #f48c23; }
-.rss { background: #ffb000; }
-
-/* Main content area */
+/* ===== MAIN CONTENT ===== */
 .main-content {
   flex: 1;
-  padding: 32px;
+  padding: 20px;
 }
