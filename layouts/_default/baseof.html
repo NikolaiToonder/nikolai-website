@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ .Title }}</title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <img src="/images/profilepic.jpg" alt="Logo" class="sidebar-logo">
+        <h1 class="sidebar-title">Nikolai</h1>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+      </nav>
+
+      <div class="sidebar-links">
+        <a class="mastodon" href="#">Mastodon</a>
+        <a class="pixiv" href="#">Pixiv</a>
+        <a class="peertube" href="#">PeerTube</a>
+        <a class="rss" href="#">RSS</a>
+      </div>
+    </aside>
+
+    <!-- Main content -->
+    <main class="main-content">
+      {{ block "main" . }}{{ end }}
+    </main>
+  </div>
+</body>
+</html>
