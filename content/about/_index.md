@@ -2,10 +2,15 @@
 title: "About"
 ---
 
-## Hi, I’m Nikolai 👋
+## Hi, I’m Nikolai
 
-I’m a computer engineering student who enjoys Linux, coding, and tinkering with new tools.  
-This site is built using **Hugo**, and the content is written in Markdown!
+---
+<!-- markdownlint-disable MD013-->
+I’m a computer engineering student who loves diving into how things work - from the software I write to the hardware it runs on.
+I spend a lot of time experimenting with Linux, exploring different development tools, and building small projects to learn something new every time.
 
-You can find my projects in the [Software](/software/) section.
+What really drives me is the process of problem-solving and improving how systems run. Whether it’s writing clean, efficient code or setting up a smoother workflow, I enjoy finding better ways to make technology work for people.
 
+Outside of coding, I usually play games, read about new tech trends, or lear something that helps me grow as a developer.
+
+If you’d like to see what I’ve been working on, take a look at the software tab!

@@ -41,6 +41,7 @@ body {
 /* ===== LAYOUT ===== */
 .layout {
   display: flex;
+  align-items: flex-start;
   padding: 20px;
 }
 
@@ -100,5 +101,21 @@ body {
   padding: 20px;
   background-color: var(--sidebar-bg);
   border: 1px solid var(--border-color);
+}
 
+
+
+/* ==== ABOUT PAGE ==== */
+.content-wrapper {
+  display: flex;
+  flex-direction: horizontal;
+  align-items: flex-start; /* keeps the top of text and image aligned */
+  gap: 2rem; /* space between text and image */
+}
+
+.about-image {
+  max-width: 250px; /* adjust as needed */
+  height: auto;
+  border-radius: 10px; /* optional: rounded corners */
+  object-fit: cover;
 }
