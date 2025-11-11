@@ -119,3 +119,20 @@ body {
   border-radius: 10px; /* optional: rounded corners */
   object-fit: cover;
 }
+
+/* ===== SOFTWARE STUFF ==== */
+
+.projects{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: horizontal;
+  gap: 2rem;
+}
+
+.project-entry{
+  border: 1px solid var(--border-button-color);
+  padding: 5px;
+}
+
+
+
