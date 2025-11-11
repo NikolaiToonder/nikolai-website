@@ -7,6 +7,9 @@
   --border-button-color: #808080;
   --accent-blue: #0096fa;
   --font-main: "Inter", sans-serif;
+  --link-color: #bdbdee;
+  --link-color-hover: #d4d6ff;
+  --link-color-active: #ffffff;
 }
 
 body {
@@ -120,19 +123,47 @@ body {
   object-fit: cover;
 }
 
+
 /* ===== SOFTWARE STUFF ==== */
 
 .projects{
   display: flex;
   align-items: flex-start;
-  flex-direction: horizontal;
-  gap: 2rem;
+  flex-direction: row;
 }
-
-.project-entry{
+.project-entry {
   border: 1px solid var(--border-button-color);
-  padding: 5px;
+}
+
+.project-title {
+  margin-top: -16px;
+  background-color: blueviolet;
+  font-weight: bold;
+  text-align: center;
 }
 
 
+.project-description,
+.project-links {
+  padding: 5px;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 
+.project-links a {
+  margin-right: 10px;
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.project-links a:hover {
+  color: var(--link-color-hover);
+}
+
+.project-links a:active {
+  color: var(--link-color-active);
+}

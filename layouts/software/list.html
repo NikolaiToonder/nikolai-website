@@ -12,14 +12,14 @@
         {{range .Pages}}
         <div class="project-entry">
           <div class="project-title">
-            <h3>{{.Params.title}}</h3>
+            <p>{{.Params.title}}</p>
           </div>
           <div class="project-description">
             <p>{{.Params.desc}}</p>
           </div>
           <div class="project-links">
             {{range .Params.links}}
-            <a href="{{.Params.url}}">{{.Params.text}}</a>
+            <a href="{{.url}}">{{.text}}</a>
             {{end}}
           </div>
         </div>
