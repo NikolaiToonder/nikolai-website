@@ -17,6 +17,9 @@ body {
   font-family: "Inter", sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* ===== HEADER ===== */
@@ -238,4 +241,18 @@ body {
   flex: 1;
   border: 1px solid var(--border-color);
   padding: 20px;
+}
+
+/* ===== FOOTER ===== */
+.site-footer {
+  border-top: 1px solid var(--border-color);
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+  color: var(--text-color);
+}
+
+.site-footer p {
+  margin: 0;
+  font-size: 0.9rem;
 }
