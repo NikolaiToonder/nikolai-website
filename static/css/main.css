@@ -68,12 +68,16 @@ body {
 .sidebar-nav a {
   display: block;
   padding: 4px 12px;
-  color: var(--text-color);
+  color: var(--link-color);
   text-decoration: none;
   border: 1px solid var(--border-button-color);
-  border-radius: 4px;
+
   margin-bottom: 8px;
   transition: background 0.2s;
+}
+
+.sidebar-nav a span {
+  text-decoration: underline;
 }
 
 .sidebar-nav a:hover {
@@ -90,12 +94,37 @@ body {
 
 .sidebar-links a {
   display: block;
-  padding: 8px 10px;
-  border-radius: 6px;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  font-weight: 600;
+  padding: 4px 12px;
+  color: var(--text-color);
+  text-decoration: underline;
+  border: 1px solid var(--border-button-color);
+  transition: background 0.2s;
+}
+
+.sidebar-links a:nth-child(1) {
+  background-color: #333333;
+
+}
+
+.sidebar-links a:nth-child(1):hover {
+  background-color: #24292e;
+}
+
+.sidebar-links a:nth-child(2) {
+  background-color: #0077b5;
+}
+
+.sidebar-links a:nth-child(2):hover {
+  background-color: #005885;
+}
+
+.sidebar-links a:nth-child(3) {
+  background-color: #D44638;
+
+}
+
+.sidebar-links a:nth-child(3):hover {
+  background-color: #B23121;
 }
 
 /* ===== MAIN CONTENT ===== */
