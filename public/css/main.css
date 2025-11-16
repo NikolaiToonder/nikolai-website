@@ -14,7 +14,7 @@
 
 body {
   margin: 0;
-  font-family: "Inter", sans-serif;
+  font-family:"Nunito Sans", sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
   display: flex;
@@ -227,7 +227,24 @@ body {
   margin-top: auto;
   border-top: 1px solid rgba(76, 87, 100, 0.3);
   background-color: rgba(0, 0, 0, 0.15);
-} 
+  gap: 4px;
+}
+
+.project-links a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.project-links a:hover {
+  color: var(--link-color-hover);
+  text-decoration: none;
+}
+
+.project-links a:not(:last-child)::after {
+  content: " • ";
+  color: var(--text-color);
+  margin: 0 4px;
+}
 
 /* ===== CONTACT PAGE ===== */
 .contact-article {
