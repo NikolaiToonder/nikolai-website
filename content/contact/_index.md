@@ -5,4 +5,4 @@ title: "Contact"
 ---
 I check my personal mail everyday at: nikolaitoonder@gmail.com  
 
-No need to send me a mail though, you can easily find me on X: https://x.com/homyie1  
+You can also find me on twitter: https://x.com/homyie1  
